@@ -173,7 +173,7 @@ const ParallaxHero: React.FC<ParallaxHeroProps> = ({ onViewCV }) => {
                   I don't just extract data, but I build systems that <span className="text-orange-400">save money</span> and <span className="text-orange-400">improve performance</span>.
                 </h2>
                 <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
-                  Data Analyst based in Paris with 2+ years of international experience, specializing in bridging the gap between raw technical data and strategic business decisions.
+                  Data Analyst based in Paris with 3+ years of international experience, specializing in bridging the gap between raw technical data and strategic business decisions.
                 </p>
               </div>
 
