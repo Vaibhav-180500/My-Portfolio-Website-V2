@@ -6,20 +6,21 @@ import { ArrowUpRight } from 'lucide-react';
 const projects: Project[] = [
   {
     id: 1,
+    title: "Streaming Platform Content Intelligence",
+    description: "Analyzed 20M+ records from MovieLens data to identify content inefficiencies, uncovering hidden gems and optimizing recommendation algorithms through genome tag intelligence.",
+    image: "https://qgnirvyfcgmnyhoooyht.supabase.co/storage/v1/object/public/Container-images/movielens.webp",
+    link: "https://movielens-content-intelligence.netlify.app/",
+    tags: ["DBT", "Snowflake", "Tableau"],
+  },
+  {
+    id: 2,
     title: "Mobile Game Analytics",
     description: "Built a full-stack analytics pipeline to understand player behavior, monetization, and retention for a mobile RPG with 10M+ event records.",
     image: "https://qgnirvyfcgmnyhoooyht.supabase.co/storage/v1/object/public/Container-images/Game%20analytics.webp",
     link: "https://github.com/Vaibhav-180500/Game_Analytics_using_SQL_and_Looker",
     tags: ["SQL", "Looker", "Statistical Testing"],
   },
-  {
-    id: 2,
-    title: "Category Growth Analysis",
-    description: "Performed a full market, category, and competitor analysis of the Vodka category in France to diagnose share loss for Eristoff and identify growth levers.",
-    image: "https://qgnirvyfcgmnyhoooyht.supabase.co/storage/v1/object/public/Container-images/category-growth.webp",
-    link: "https://www.canva.com/design/DAF8M1KSRXc/OLmLKrhF2XtEfzbN0PcjJQ/view?utm_content=DAF8M1KSRXc&utm_campaign=designshare&utm_medium=link&utm_source=editor",
-    tags: ["Market Analysis", "Benchmarking", "Strategy"],
-  },
+
   {
     id: 3,
     title: "E-Commerce Sales Analytics",
