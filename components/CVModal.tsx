@@ -9,7 +9,7 @@ interface CVModalProps {
 const CVModal: React.FC<CVModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const pdfUrl = "https://qgnirvyfcgmnyhoooyht.supabase.co/storage/v1/object/public/CV/Vaibhav_KUMAR_CV.pdf";
+  const pdfUrl = "https://qgnirvyfcgmnyhoooyht.supabase.co/storage/v1/object/public/CV/Vaibhav_KUMAR_CV%20(1).pdf";
   
   // Appending ?download to the Supabase URL forces the server to send the correct 
   // Content-Disposition headers, which fixes the cross-origin download error.
@@ -37,7 +37,7 @@ const CVModal: React.FC<CVModalProps> = ({ isOpen, onClose }) => {
             </div>
             <div>
               <h3 className="text-xl font-bold text-white leading-tight">Curriculum Vitae</h3>
-              <p className="text-zinc-500 text-xs font-mono uppercase tracking-wider mt-0.5">Vaibhav_KUMAR_CV.pdf</p>
+              <p className="text-zinc-500 text-xs font-mono uppercase tracking-wider mt-0.5">Vaibhav_KUMAR_CV (1).pdf</p>
             </div>
           </div>
           <button 
