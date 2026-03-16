@@ -4,44 +4,46 @@ import { GraduationCap, Briefcase, Calendar } from 'lucide-react';
 
 const timeline = [
   {
-    period: "2019 - 2022",
-    title: "Bachelor of Business Administration",
-    institution: "Amity University - INDIA",
-    type: "education",
-    icon: <GraduationCap className="w-5 h-5" />,
-    color: "border-blue-500/50"
-  },
-  {
-    period: "2021 - 2022",
-    title: "Marketing Analyst",
-    institution: "Quality of Life Experiment",
+    period: "Aug 2025 - Present",
+    title: "Data Analyst",
+    institution: "Self-Employed",
     type: "work",
-    icon: <Briefcase className="w-5 h-5" />,
-    color: "border-green-500/50"
+    icon: <Briefcase className="w-5 h-5" />
   },
   {
-    period: "2022 - 2024",
-    title: "MSc in Marketing (Data Science & AI)",
-    institution: "Kedge Business School",
-    type: "education",
-    icon: <GraduationCap className="w-5 h-5" />,
-    color: "border-blue-500/50"
-  },
-  {
-    period: "2023",
-    title: "Market Research Analyst (May – Sept)",
-    institution: "Best Influence",
-    type: "work",
-    icon: <Briefcase className="w-5 h-5" />,
-    color: "border-purple-500/50"
-  },
-  {
-    period: "2024 - 2025",
-    title: "Corporate CMI – Data Analyst",
+    period: "Jul 2024 - Jul 2025",
+    title: "Data Analyst",
     institution: "L'Oréal",
     type: "work",
-    icon: <Briefcase className="w-5 h-5" />,
-    color: "border-orange-500/50" // Highlight current role
+    icon: <Briefcase className="w-5 h-5" />
+  },
+  {
+    period: "May 2023 - Sep 2023",
+    title: "Marketing Research Analyst",
+    institution: "Best influence",
+    type: "work",
+    icon: <Briefcase className="w-5 h-5" />
+  },
+  {
+    period: "May 2023 - Jul 2023",
+    title: "Market Researcher",
+    institution: "Intheair",
+    type: "work",
+    icon: <Briefcase className="w-5 h-5" />
+  },
+  {
+    period: "Aug 2022 - Apr 2023",
+    title: "Research Analyst",
+    institution: "Self-Employed",
+    type: "work",
+    icon: <Briefcase className="w-5 h-5" />
+  },
+  {
+    period: "Jan 2021 - May 2022",
+    title: "Marketing Data Analyst",
+    institution: "Quality of Life Experiments",
+    type: "work",
+    icon: <Briefcase className="w-5 h-5" />
   }
 ];
 
@@ -118,17 +120,29 @@ const About: React.FC = () => {
                   {/* Connector for hover effect */}
                   <div className="absolute left-[0px] top-2 bottom-0 w-0.5 bg-orange-500 origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-500 -ml-[1px]"></div>
 
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-2">
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-orange-500 font-mono font-bold text-xs tracking-wider uppercase">
-                      <Calendar className="w-3 h-3" />
-                      {item.period}
-                    </span>
-                    <h4 className="text-xl font-bold text-white group-hover:text-orange-400 transition-colors">{item.institution}</h4>
+                  {/* Details Container */}
+                  <div className="flex flex-col mb-4 space-y-2">
+                    {/* Role Title */}
+                    <h4 className="text-xl font-bold text-white group-hover:text-orange-400 transition-colors">
+                      {item.title}
+                    </h4>
+
+                    {/* Institution */}
+                    <p className="text-lg text-zinc-300 font-medium">
+                      {item.institution}
+                    </p>
+
+                    {/* Date Badge */}
+                    <div className="flex">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-orange-500 font-mono font-bold text-xs tracking-wider uppercase">
+                        <Calendar className="w-3 h-3" />
+                        {item.period}
+                      </span>
+                    </div>
                   </div>
                   
-                  <p className="text-lg text-zinc-300 font-medium">{item.title}</p>
-                  
-                  <div className="mt-3 flex items-center gap-2 text-zinc-500 text-sm">
+                  {/* Footer Icon */}
+                  <div className="mt-1 flex items-center gap-2 text-zinc-500 text-sm">
                      <div className={`p-1.5 rounded-md bg-zinc-900 border border-zinc-800 group-hover:border-zinc-700 transition-colors`}>
                       {item.icon}
                      </div>
@@ -143,8 +157,8 @@ const About: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
                 
                 <img 
-                  src="https://qgnirvyfcgmnyhoooyht.supabase.co/storage/v1/object/public/Container-images/My%20journey.webp" 
-                  alt="My Journey Map" 
+                  src="/data_analyst.png" 
+                  alt="3D Data Analyst Illustration" 
                   className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 />
             </div>
